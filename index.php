@@ -1,0 +1,1 @@
+  <?php header('Location: /index.html'); //https://lime-preview.herokuapp.com/index.html ?>

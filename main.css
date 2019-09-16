@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Bellerose";
+    src: url("assets/fonts/Bellerose.ttf");
+}
+
+@font-face {
+    font-family: "Bethany Script";
+    src: url("assets/fonts/Bethany Script.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Bethany Script";
+    margin: 0;
+    padding: 0;
+    color: #9C9;
+    font-weight: lighter;
+    text-align: left;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 100%;
+    text-align: justify;
+    font-weight: lighter;
+    color: #666;
+}
+
+p::first-letter {
+    padding-left: 50px;
+}
+
+#landing {
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    min-height: 50vw;
+}
+
+#landing img {
+    width: 50vw;
+    max-width: 400px;
+}
+
+#landing-background {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/images/decoracao-de-interiores.jpg");
+    filter: brightness(0.2);
+}
+
+#landing-glow {
+    width: 0;
+    height: 0;
+    box-shadow: 0 0 500px 200px rgba(255,255,255,.2)
+}
+
+#folder-image {
+    background-image: url("assets/images/lime-folder.png");
+    background-position: left center;
+}
+
+#portfolio-image {
+    background-image: url("assets/images/portfolio-preview.jpg");
+}
+
+#middle-info .content {
+    max-width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#middle-info {
+    background-image: url("assets/images/image.png");
+    padding: 300px;
+}
+
+#middle-info h1 {
+    text-align: center;
+    text-shadow: 0 0 15px rgba(255,255,255,.3);
+}
+
+.default-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+p.light {
+    color: #CCC;
+}
+
+h1.light {
+    color: #FFF;
+}
+
+.card.accent {
+    background-color: #9C9;
+}
+
+.page {
+    display: block;
+    position: relative;
+}
+
+.page > .content {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.flex > .default-background {
+    height: unset;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.flex > .flex-50 {
+    flex: 1;
+}
+
+.card {
+    padding: 80px;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slow-fade-in {
+    animation: fade-in 5s ease-in-out;
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    font-size: 130%;
+    color: #555;
+    border-bottom: 1px solid #CCC;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+input:focus, input:valid {
+    border-bottom: 1px solid #9C9;
+}
+
+textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    font-size: 130%;
+    color: #555;
+    border-bottom: 1px solid #CCC;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 400px;
+    transition: border 0.5s;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+form > div {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+label {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    color: #9C9;
+    font-size: 150%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #555;
+    color: #9C9;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #777;
+}
+
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label {
+    top: -35px;
+    left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .sm-column {
+        flex-direction: column;
+    }
+
+    .sm-column > .sm-50 {
+        flex-basis: 50vh;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h1, h2, h3, h4, h5 {
+        text-align: center;
+    }
+}
