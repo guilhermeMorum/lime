@@ -310,4 +310,9 @@ textarea:valid + label {
     #middle-info {
         padding: 100px 10px !important;
     }
+
+    .sm-column-reverse {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
 }
