@@ -19,6 +19,11 @@ html, body {
     font-family: Calibri, Helvetica, sans-serif;
 }
 
+body:after{
+    display:none;
+    content: url("assets/lime-logo.png") url("assets/images/decoracao-de-interiores.jpg");
+}
+
 h1, h2, h3, h4, h5 {
     font-family: "Bethany Script";
     margin: 0;
