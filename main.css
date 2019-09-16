@@ -246,6 +246,31 @@ textarea:valid + label {
     left: 10px;
 }
 
+#footer {
+    background-color: #333;
+    padding: 50px;
+    text-align: left;
+    position: relative;
+    height: 200px;
+    color: #FFF;
+}
+
+#footer > img {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.icon {
+    height: 20px;
+    margin: -5px;
+    margin-right: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
 @media screen and (max-width: 1000px) {
     .sm-column {
         flex-direction: column;
