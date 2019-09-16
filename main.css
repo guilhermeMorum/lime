@@ -288,8 +288,3 @@ textarea:valid + label {
         text-align: center;
     }
 }
-
-body::after {
-    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url("assets/lime-logo.png") url("assets/images/decoracao-de-interiores.jpg");
- }
