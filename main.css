@@ -8,6 +8,10 @@
     src: url("assets/fonts/Bethany Script.ttf");
 }
 
+div#preload {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     transition: all 0.5s;
@@ -17,11 +21,6 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Calibri, Helvetica, sans-serif;
-}
-
-body:after{
-    display:none;
-    content: url("assets/lime-logo.png") url("assets/images/decoracao-de-interiores.jpg");
 }
 
 h1, h2, h3, h4, h5 {

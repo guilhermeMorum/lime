@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            var picks = [];
-            var names = ["assets/lime-logo.png", "assets/images/decoracao-de-interiores.jpg"];
-            names.forEach(function(name){
-                var pic = new Image();
-                pic.src = name;
-                picks.push(pic);
-            });
-        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lime - Arquitetura e Interiores</title>
-
-        <link rel="preload" as="image" href="assets/lime-logo.png">
-        <link rel="preload" as="image" href="assets/images/decoracao-de-interiores.jpg">
         <link rel="stylesheet" type="text/css" href="main.css" media="all">
     <body>
+        <div id="preload">
+            <img src="assets/lime-logo.png">
+            <img src="assets/images/decoracao-de-interiores.jpg">
+        </div>
         <div id="menu"></div>
         <div id="landing" class="page">
             <div id="landing-background" class="default-background absolute-center"></div>
