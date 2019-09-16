@@ -14,7 +14,6 @@ div#preload {
 
 * {
     box-sizing: border-box;
-    transition: all 0.5s;
 }
 
 html, body {
@@ -58,6 +57,7 @@ p::first-letter {
 #landing img {
     width: 50vw;
     max-width: 400px;
+    min-width: 350px;
 }
 
 #landing-background {
@@ -80,6 +80,10 @@ p::first-letter {
 
 #portfolio-image {
     background-image: url("assets/images/portfolio-preview.jpg");
+}
+
+#middle-info p {
+    text-shadow: 0 1px 0 rgba(0,0,0,.8);
 }
 
 #middle-info .content {
@@ -192,6 +196,7 @@ input {
     border-bottom: 1px solid #CCC;
     font-family: Calibri, Helvetica, sans-serif;
     font-weight: lighter;
+    transition: all 0.5s;
 }
 
 input:focus, input:valid {
@@ -227,6 +232,7 @@ label {
     left: 15px;
     color: #9C9;
     font-size: 150%;
+    transition: all 0.5s;
 }
 
 input[type="submit"],
@@ -240,6 +246,11 @@ input[type="reset"] {
 input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #777;
+}
+
+#clear {
+    background-color: #CCC;
+    color: #333;
 }
 
 input:focus + label,
@@ -284,11 +295,19 @@ textarea:valid + label {
         flex-basis: 50vh;
     }
 
+    .sm-column > .sm-40 {
+        flex-basis: 40vh;
+    }
+
     .card {
         padding: 20px;
     }
 
     h1, h2, h3, h4, h5 {
         text-align: center;
+    }
+
+    #middle-info {
+        padding: 100px 10px !important;
     }
 }
