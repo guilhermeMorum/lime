@@ -12,6 +12,11 @@ div#preload {
     display: none;
 }
 
+p strong {
+    font-weight: unset;
+    color: #9C9;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -28,11 +33,18 @@ h1, h2, h3, h4, h5 {
     padding: 0;
     color: #9C9;
     font-weight: lighter;
-    text-align: left;
 }
 
 h1 {
     font-size: 7em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2.5em;
 }
 
 p {
@@ -94,13 +106,21 @@ p::first-letter {
 }
 
 #middle-info {
-    background-image: url("assets/images/image.png");
+    background-image: url("assets/images/middle-info.jpg");
     padding: 300px;
+    background-attachment: fixed;
 }
 
 #middle-info h1 {
     text-align: center;
     text-shadow: 0 0 15px rgba(255,255,255,.3);
+}
+
+#valores {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    flex-wrap: wrap;
 }
 
 .default-background {
@@ -135,6 +155,10 @@ h1.light {
     top: 0;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
 .flex {
     display: flex;
     width: 100%;
@@ -156,6 +180,11 @@ h1.light {
     padding: 80px;
 }
 
+.content-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .absolute-center {
     position: absolute;
     top: 50%;
@@ -173,7 +202,7 @@ h1.light {
 }
 
 .slow-fade-in {
-    animation: fade-in 3s ease-in-out;
+    animation: fade-in 1.5s ease-in-out;
 }
 
 .fade-in {
@@ -286,6 +315,94 @@ textarea:valid + label {
     padding: 10px;
 }
 
+.profile-top-offset .card {
+    padding-top: 0;
+    margin-top: -40px;
+}
+
+.portfolio-border-radius {
+    border-radius: 100px 0 0 100px;
+}
+
+.contato-border-radius {
+    border-radius: 0 100px 0 0;
+}
+
+.sobre-border-radius {
+    border-radius: 0 0 100px 0;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fade-in-1 {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.profile-picture {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.valor {
+    text-transform: uppercase;
+    background: #9C9;
+    height: 250px;
+    width: 250px;
+    padding: 110px 0;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.7em;
+    border-radius: 100%;
+    text-align: center;
+    flex-shrink: 0;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.valor:hover {
+    background: #FFF;
+    color: #9c9;
+    box-shadow: 0 0 50px #DDD;
+}
+
+.profile-picture:hover {
+    box-shadow: 0 0 50px rgba(0,0,0,.25);
+}
+
+.padding-left-0 {
+    padding-left: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+#carol-image {
+    background-image: url("assets/images/carol.jpg");
+}
+
+#baby-image {
+    background-image: url("assets/images/baby.jpg");
+}
+
 @media screen and (max-width: 1000px) {
     .sm-column {
         flex-direction: column;
@@ -311,8 +428,49 @@ textarea:valid + label {
         padding: 100px 10px !important;
     }
 
+    .content-70 {
+        width: 100%;
+    }
+
+    #valores {
+        width: 100%;
+    }
+
+    .portfolio-border-radius {
+        border-radius: 0;
+    }
+    
+    .contato-border-radius {
+        border-radius: 0;
+    }
+
+    .sobre-border-radius {
+        border-radius: 0;
+    }
+
     .sm-column-reverse {
         flex-direction: column;
         flex-direction: column-reverse;
     }
+
+    .sm-content-center {
+        justify-content: center;
+    }
+
+    .valor {
+        align-self: center;
+    }
+
+    #carol-image, #baby-image {
+        align-self: center;
+    }
+
+    .profile-top-offset .card {
+        padding-top: 20px;
+    }
+
+    .sm-text-justify {
+        text-align: justify;
+    }
+
 }
