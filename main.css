@@ -255,7 +255,7 @@ form > div {
     margin-bottom: 50px;
 }
 
-label {
+form label {
     position: absolute;
     top: 7px;
     left: 15px;
@@ -321,11 +321,11 @@ textarea:valid + label {
 }
 
 .portfolio-border-radius {
-    border-radius: 100px 0 0 100px;
+    border-radius: 100px 0 0 0;
 }
 
 .contato-border-radius {
-    border-radius: 0 100px 0 0;
+    border-radius: 0 0 0 0;
 }
 
 .sobre-border-radius {
@@ -403,6 +403,133 @@ textarea:valid + label {
     background-image: url("assets/images/baby.jpg");
 }
 
+.portfolio {
+    height: 80vh;
+    min-height: 600px;
+}
+
+.portfolio-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s;
+    flex-shrink: 1;
+}
+
+#img-1:checked ~ .portfolio .port-1,
+#img-2:checked ~ .portfolio .port-2,
+#img-3:checked ~ .portfolio .port-3,
+#img-4:checked ~ .portfolio .port-4,
+#img-5:checked ~ .portfolio .port-5,
+#img-6:checked ~ .portfolio .port-6,
+#img-7:checked ~ .portfolio .port-7,
+#img-8:checked ~ .portfolio .port-8 {
+    flex-basis: 300%;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.portfolio-column .portfolio-item label {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.portfolio-column .portfolio-item {
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 80px rgba(0,0,0,0.5) inset;
+    transition: all 0.5s;
+    filter: brightness(0.8);
+    flex-basis: 50%;
+}
+
+#img-1:checked ~ .portfolio .port-1,
+#img-2:checked ~ .portfolio .port-2,
+#img-3:checked ~ .portfolio .port-3,
+#img-4:checked ~ .portfolio .port-4,
+#img-5:checked ~ .portfolio .port-5,
+#img-6:checked ~ .portfolio .port-6,
+#img-7:checked ~ .portfolio .port-7,
+#img-8:checked ~ .portfolio .port-8,
+.portfolio-column .portfolio-item:hover {
+    filter: brightness(1);
+    box-shadow: 0 0 80px rgba(0,0,0,0);
+}
+
+.portfolio-column .portfolio-item .portfolio-desc {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    padding: 10px 20px;
+    bottom: 0;
+    transition: all 0.5s;
+    background-color: rgba(0,0,0,.3);
+}
+
+#img-1:checked ~ .portfolio .port-1 .portfolio-desc,
+#img-2:checked ~ .portfolio .port-2 .portfolio-desc,
+#img-3:checked ~ .portfolio .port-3 .portfolio-desc,
+#img-4:checked ~ .portfolio .port-4 .portfolio-desc,
+#img-5:checked ~ .portfolio .port-5 .portfolio-desc,
+#img-6:checked ~ .portfolio .port-6 .portfolio-desc,
+#img-7:checked ~ .portfolio .port-7 .portfolio-desc,
+#img-8:checked ~ .portfolio .port-8 .portfolio-desc {
+    opacity: 1;
+}
+
+.portfolio-column .portfolio-desc h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.portfolio-column .portfolio-desc p {
+    color: #fff;
+    font-size: 1em;
+    margin: 0;
+}
+
+.port-1 {
+    background-image: url("assets/images/portfolio/1.jpg");
+}
+
+.port-2 {
+    background-image: url("assets/images/portfolio/2.jpg");
+}
+
+.port-3 {
+    background-image: url("assets/images/portfolio/3.jpg");
+}
+
+.port-4 {
+    background-image: url("assets/images/portfolio/4.jpg");
+}
+
+.port-5 {
+    background-image: url("assets/images/portfolio/5.jpg");
+}
+
+.port-6 {
+    background-image: url("assets/images/portfolio/6.jpg");
+}
+
+.port-7 {
+    background-image: url("assets/images/portfolio/7.jpg");
+}
+
+.port-8 {
+    background-image: url("assets/images/portfolio/8.jpg");
+}
+
+.portfolio-item img {
+    width: 20%;
+}
+
 @media screen and (max-width: 1000px) {
     .sm-column {
         flex-direction: column;
@@ -472,6 +599,40 @@ textarea:valid + label {
 
     .sm-text-justify {
         text-align: justify;
+    }
+
+    .portfolio {
+        height: auto;
+    }
+
+    .portfolio-column .portfolio-item {
+        flex-basis: 40vh;
+    }
+
+    .portfolio-column .portfolio-item label {
+        height: 40vh;
+    }
+
+    #img-1:checked ~ .portfolio .port-1,
+    #img-2:checked ~ .portfolio .port-2,
+    #img-3:checked ~ .portfolio .port-3,
+    #img-4:checked ~ .portfolio .port-4,
+    #img-5:checked ~ .portfolio .port-5,
+    #img-6:checked ~ .portfolio .port-6,
+    #img-7:checked ~ .portfolio .port-7,
+    #img-8:checked ~ .portfolio .port-8 {
+        flex-basis: 80vh;
+    }
+
+    #img-1:checked ~ .portfolio .port-1 label,
+    #img-2:checked ~ .portfolio .port-2 label,
+    #img-3:checked ~ .portfolio .port-3 label,
+    #img-4:checked ~ .portfolio .port-4 label,
+    #img-5:checked ~ .portfolio .port-5 label,
+    #img-6:checked ~ .portfolio .port-6 label,
+    #img-7:checked ~ .portfolio .port-7 label,
+    #img-8:checked ~ .portfolio .port-8 label {
+        flex-basis: 80vh;
     }
 
 }
