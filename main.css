@@ -438,6 +438,7 @@ input[type="checkbox"]{
     width: 100%;
     display: block;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .portfolio-column .portfolio-item {
