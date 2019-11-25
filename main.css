@@ -632,7 +632,7 @@ input[type="checkbox"]{
     #img-6:checked ~ .portfolio .port-6 label,
     #img-7:checked ~ .portfolio .port-7 label,
     #img-8:checked ~ .portfolio .port-8 label {
-        flex-basis: 80vh;
+        height: 80vh;
     }
 
 }
