@@ -70,12 +70,13 @@ p::first-letter {
     width: 50vw;
     max-width: 400px;
     min-width: 200px;
-    transform: translate(-80% ,-60%);
+    transform: translate(-50%, -30%);
 }
 
 
 #landing img + img {
-    transform: translate(-30% ,20%);
+    top: 10%;
+    transform: translate(-50%, 0);
 }
 
 #landing-background {
