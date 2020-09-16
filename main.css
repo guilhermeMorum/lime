@@ -69,20 +69,56 @@ p::first-letter {
 #landing img {
     width: 50vw;
     max-width: 400px;
-    min-width: 350px;
+    min-width: 200px;
+    transform: translate(-80% ,-60%);
+}
+
+
+#landing img + img {
+    transform: translate(-30% ,20%);
 }
 
 #landing-background {
     width: 100%;
     height: 100%;
-    background-image: url("assets/images/decoracao-de-interiores.jpg");
+    background-image: url("assets/images/banner1.jpg");
     filter: brightness(0.2);
+}
+
+#landing-background2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/images/banner2.jpg");
+    filter: brightness(0.2);
+    animation: banner 20s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #landing-glow {
     width: 0;
     height: 0;
-    box-shadow: 0 0 500px 200px rgba(255,255,255,.2)
+    box-shadow: 0 0 150px 150px rgba(255,255,255,.2)
 }
 
 #folder-image {
