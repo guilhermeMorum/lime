@@ -132,12 +132,35 @@ p::first-letter {
     }
 }
 
-#contact-actions {
+#teste-estilo {
+    font-size: 2.5em;
+    padding: 40px;
+    background-color: #9C9;
+}
 
+#teste-estilo a {
+    min-width: 30%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    color: #9C9;
+    text-decoration: none;
+    background-color: #EEE;
+    padding: 30px 60px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    text-shadow: 0 -1px 1px #fff;
+    transition: 0.2s all;
+    box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+
+#contact-actions {
     font-size: 2.5em;
 }
 
 #contact-actions a {
+    margin-top: 30px;
     color: #FFF;
     text-decoration: none;
     background-color: #9C9;
@@ -148,10 +171,6 @@ p::first-letter {
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
     transition: 0.2s all;
     box-shadow: 0 1px 1px rgba(0,0,0,.3);
-}
-
-#contact-actions a + a {
-    margin-top: 30px;
 }
 
 #contact-actions a:hover {
@@ -565,7 +584,6 @@ input[type="checkbox"]{
 }
 
 .portfolio-group {
-    box-shadow: 0 -5px 0px rgba(0,0,0,.2) inset;
     padding-top: 20px;
     transition: .5s all;
     height: 500px;
@@ -606,7 +624,6 @@ input[type="checkbox"]{
 }
 
 #parceiros {
-    background-image: url("assets/images/2.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -615,7 +632,7 @@ input[type="checkbox"]{
     background-color: rgba(255,255,255,.7);
 }
 
-#parceiros, .parceiros {
+#parceiros {
     text-align: center;
     padding: 40px;
 }
