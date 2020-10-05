@@ -178,8 +178,12 @@ p::first-letter {
 }
 
 #folder-image {
-    background-image: url("assets/images/lime-folder.png");
+    background-image: url("assets/images/2.jpeg");
     background-position: left center;
+}
+
+#portfolio {
+    margin-top: 50px;
 }
 
 #portfolio-image {
@@ -417,7 +421,7 @@ textarea:valid + label {
 }
 
 .portfolio-border-radius {
-    border-radius: 100px 0 0 0;
+    border-radius: 100px 0 0 100px;
 }
 
 .contato-border-radius {
@@ -599,6 +603,26 @@ input[type="checkbox"]{
     flex-grow: 0;
     flex-shrink: 1;
     margin-bottom: 20px;
+}
+
+#parceiros {
+    background-image: url("assets/images/2.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.parceiros {
+    background-color: rgba(255,255,255,.7);
+}
+
+#parceiros, .parceiros {
+    text-align: center;
+    padding: 40px;
+}
+
+.parceiro-item {
+    max-width: 30%;
+    margin: 30px;
 }
 
 @media screen and (max-width: 1000px) {
